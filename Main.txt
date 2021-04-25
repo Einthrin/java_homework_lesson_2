@@ -1,0 +1,52 @@
+//Main Metod
+
+public class Main
+{
+	//Don't repeat yourself!!
+	
+	public static void main(String[] args)
+	{
+		Students student1 = new Students(1,"Ogreci Adi 1","Ogrenci Soyadi 1");
+		student1.number=1;
+		student1.name="Yasin";
+		student1.surname="Çiftçi";
+		
+		Students student2 = new Students(2,"Ogreci Adi 2","Ogrenci Soyadi 2");
+		student2.number=1;
+		student2.name="Mehmet";
+		student2.surname="Çiftçi";
+		
+		Students student3 = new Students(3,"Ogreci Adi 2","Ogrenci Soyadi 2");
+		student3.number=1;
+		student3.name="Engin";
+		student3.surname="Demiroğ";
+		
+		Students[] student = {student1,student2,student3};
+		
+		for(Students Students : student) {
+			System.out.println(Students.name);
+		}
+		
+		System.out.println(student.length);
+		
+		Category category1 = new Category(1,"Kurs Adı 1");
+		category1.id=1;
+		category1.name="PROGLAMLAMAYA GİRİŞ İÇİN TEMEL KURS";
+		
+		Category category2 = new Category(2,"Kurs Adı 2)");
+		category2.id=2;
+		category2.name="YAZILM GELİŞTİRİCİ YETİŞTİRME KAMPI(C# + ANGULAR)";
+		
+		Category category3 = new Category(3,"Kurs Adı 3)");
+		category3.id=3;
+		category3.name="YAZILIM GELİŞTİRİCİ YETİŞTİRME KAMPI(JAVA + REACT)";
+		
+		Manager manager = new Manager();
+		
+		Manager.addCategory(category1);
+		
+		Manager.addCategory(category2);
+		
+		Manager.addCategory(category3);
+	}
+}

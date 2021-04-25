@@ -1,0 +1,15 @@
+//Students Metod
+
+public class Students
+{
+	public Students(int number, String name, String surname)
+	{
+		this.number = number;
+		this.name = name;
+		this.surname = surname;
+	}
+	
+	int number;
+	String name;
+	String surname;
+}

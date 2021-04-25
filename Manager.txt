@@ -1,0 +1,9 @@
+//Manager Metod
+
+public class Manager
+{
+	public static void addCategory(Category category)
+	{
+		System.out.println(category.name + " Adlı Kursa Kayıt Oldunuz.");
+	}
+}
